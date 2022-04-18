@@ -46,6 +46,7 @@
                                         <rect key="frame" x="-2" y="272.5" width="418" height="137.5"/>
                                         <connections>
                                             <action selector="heightProgressBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="8vM-m7-N72"/>
+                                            <action selector="heightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="tQ4-10-fiH"/>
                                             <action selector="weightProgressBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="i9R-t5-iTL"/>
                                         </connections>
                                     </slider>
@@ -70,12 +71,16 @@
                                         <rect key="frame" x="-2" y="545.5" width="418" height="137"/>
                                         <connections>
                                             <action selector="weightProgressBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="g8Z-xe-Yp2"/>
+                                            <action selector="weightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Uib-sl-RDI"/>
                                         </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Koq-x4-4ch">
                                         <rect key="frame" x="0.0" y="681.5" width="414" height="136.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="테스트"/>
+                                        <connections>
+                                            <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJg-hE-JBJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -101,6 +106,10 @@
                             <constraint firstItem="RoN-SV-ipF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mwL-hs-Gax"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightText" destination="jgn-qg-gNU" id="5JQ-dh-Lci"/>
+                        <outlet property="weightText" destination="cVa-wf-ntd" id="XPv-5T-KNE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
