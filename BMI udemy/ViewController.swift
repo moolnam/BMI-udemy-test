@@ -14,30 +14,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+
     @IBOutlet weak var heightText: UILabel!
     @IBOutlet weak var weightText: UILabel!
     
+    
     @IBAction func heightSlider(_ sender: UISlider) {
-        // 키
+        print(String(format: "%.2f", sender.value))
         heightText.text = String(format: "%.2f", sender.value)
     }
     
     @IBAction func weightSlider(_ sender: UISlider) {
-        // 몸무게
+        print(String(format: "%.2f", sender.value))
         weightText.text = String(format: "%.2f", sender.value)
-        
     }
-    
-    @IBAction func button(_ sender: UIButton) {
-        print("Button Clicked!")
-        
-        
-    }
-    
-    func upData() {
-        print("Up Data Clicked!")
-    }
-    
     
 }
 
