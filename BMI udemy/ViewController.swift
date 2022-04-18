@@ -23,13 +23,13 @@ class ViewController: UIViewController {
     @IBAction func heightSlider(_ sender: UISlider) {
         print(String(format: "%.2f", sender.value))
         let height = String(format: "%.2f", sender.value)
-        heightText.text = "\(height) M"
+        heightText.text = "\(height) M!!"
     }
     
     @IBAction func weightSlider(_ sender: UISlider) {
         print(String(format: "%.0f", sender.value))
         let weight = String(format: "%.0f", sender.value)
-        weightText.text = "\(weight) KG"
+        weightText.text = "\(weight) KG!!"
     }
     
 }
