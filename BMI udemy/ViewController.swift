@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func weightSlider(_ sender: UISlider) {
-        print(String(format: "%.2f", sender.value))
-        let weight = String(format: "%.2f", sender.value)
+        print(String(format: "%.0f", sender.value))
+        let weight = String(format: "%.0f", sender.value)
         weightText.text = "\(weight) KG"
     }
     

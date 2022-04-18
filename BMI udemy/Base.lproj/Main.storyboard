@@ -42,7 +42,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-9d-QiK">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-9d-QiK">
                                         <rect key="frame" x="-2" y="272.5" width="418" height="137.5"/>
                                         <connections>
                                             <action selector="heightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="HnG-6Y-fOA"/>
@@ -65,7 +65,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Glz-So-Mo4">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Glz-So-Mo4">
                                         <rect key="frame" x="-2" y="545.5" width="418" height="137"/>
                                         <connections>
                                             <action selector="weightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="e7R-Ub-cSX"/>
