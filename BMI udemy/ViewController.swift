@@ -19,16 +19,18 @@ class ViewController: UIViewController {
     
     @IBAction func heightSlider(_ sender: UISlider) {
         // 키
-        heightText.text = ""
+        heightText.text = String(format: "%.2f", sender.value)
     }
     
     @IBAction func weightSlider(_ sender: UISlider) {
         // 몸무게
-        weightText.text = ""
+        weightText.text = String(format: "%.2f", sender.value)
+        
     }
     
     @IBAction func button(_ sender: UIButton) {
         print("Button Clicked!")
+        
         
     }
     
