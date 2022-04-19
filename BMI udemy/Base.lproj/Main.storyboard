@@ -73,8 +73,12 @@
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Koq-x4-4ch">
                                         <rect key="frame" x="0.0" y="681.5" width="414" height="136.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="테스트"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="실행"/>
+                                        <connections>
+                                            <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uqC-zc-rIT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -101,7 +105,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bmi" destination="mwF-x9-Sks" id="ptr-NI-Ita"/>
+                        <outlet property="height" destination="Ce1-9d-QiK" id="noA-MG-AWD"/>
                         <outlet property="heightText" destination="jgn-qg-gNU" id="8q3-29-kPE"/>
+                        <outlet property="weight" destination="Glz-So-Mo4" id="xfI-dZ-fQb"/>
                         <outlet property="weightText" destination="cVa-wf-ntd" id="GCp-av-OTS"/>
                     </connections>
                 </viewController>
