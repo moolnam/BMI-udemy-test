@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		782A36A5280E669300EC6D6D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A36A4280E669300EC6D6D /* Model.swift */; };
 		782A36A8280E671900EC6D6D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A36A7280E671900EC6D6D /* SecondViewController.swift */; };
+		782A36AA280E702800EC6D6D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A36A9280E702800EC6D6D /* ResultViewController.swift */; };
 		786E1670280D52E3008FC69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E166F280D52E3008FC69C /* AppDelegate.swift */; };
 		786E1672280D52E3008FC69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1671280D52E3008FC69C /* SceneDelegate.swift */; };
-		786E1674280D52E3008FC69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1673280D52E3008FC69C /* ViewController.swift */; };
+		786E1674280D52E3008FC69C /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1673280D52E3008FC69C /* CalculateViewController.swift */; };
 		786E1677280D52E3008FC69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786E1675280D52E3008FC69C /* Main.storyboard */; };
 		786E167A280D52E3008FC69C /* BMI_udemy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 786E1678280D52E3008FC69C /* BMI_udemy.xcdatamodeld */; };
 		786E167C280D52E4008FC69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786E167B280D52E4008FC69C /* Assets.xcassets */; };
@@ -21,10 +22,11 @@
 /* Begin PBXFileReference section */
 		782A36A4280E669300EC6D6D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		782A36A7280E671900EC6D6D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		782A36A9280E702800EC6D6D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = "BMI udemy/ResultViewController.swift"; sourceTree = SOURCE_ROOT; };
 		786E166C280D52E3008FC69C /* BMI udemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI udemy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786E166F280D52E3008FC69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786E1671280D52E3008FC69C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		786E1673280D52E3008FC69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		786E1673280D52E3008FC69C /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		786E1676280D52E3008FC69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		786E1679280D52E3008FC69C /* BMI_udemy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BMI_udemy.xcdatamodel; sourceTree = "<group>"; };
 		786E167B280D52E4008FC69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +56,8 @@
 		782A36A3280E667A00EC6D6D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				786E1673280D52E3008FC69C /* ViewController.swift */,
+				782A36A9280E702800EC6D6D /* ResultViewController.swift */,
+				786E1673280D52E3008FC69C /* CalculateViewController.swift */,
 				782A36A7280E671900EC6D6D /* SecondViewController.swift */,
 			);
 			path = Controller;
@@ -173,7 +176,8 @@
 			files = (
 				782A36A8280E671900EC6D6D /* SecondViewController.swift in Sources */,
 				782A36A5280E669300EC6D6D /* Model.swift in Sources */,
-				786E1674280D52E3008FC69C /* ViewController.swift in Sources */,
+				782A36AA280E702800EC6D6D /* ResultViewController.swift in Sources */,
+				786E1674280D52E3008FC69C /* CalculateViewController.swift in Sources */,
 				786E167A280D52E3008FC69C /* BMI_udemy.xcdatamodeld in Sources */,
 				786E1670280D52E3008FC69C /* AppDelegate.swift in Sources */,
 				786E1672280D52E3008FC69C /* SceneDelegate.swift in Sources */,
