@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782A36A5280E669300EC6D6D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A36A4280E669300EC6D6D /* Model.swift */; };
 		786E1670280D52E3008FC69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E166F280D52E3008FC69C /* AppDelegate.swift */; };
 		786E1672280D52E3008FC69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1671280D52E3008FC69C /* SceneDelegate.swift */; };
 		786E1674280D52E3008FC69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1673280D52E3008FC69C /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		782A36A4280E669300EC6D6D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		786E166C280D52E3008FC69C /* BMI udemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI udemy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786E166F280D52E3008FC69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786E1671280D52E3008FC69C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		782A36A2280E666D00EC6D6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				786E1675280D52E3008FC69C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		782A36A3280E667A00EC6D6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				786E1673280D52E3008FC69C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		782A36A6280E669E00EC6D6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				782A36A4280E669300EC6D6D /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		786E1663280D52E3008FC69C = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +86,9 @@
 			children = (
 				786E166F280D52E3008FC69C /* AppDelegate.swift */,
 				786E1671280D52E3008FC69C /* SceneDelegate.swift */,
-				786E1673280D52E3008FC69C /* ViewController.swift */,
-				786E1675280D52E3008FC69C /* Main.storyboard */,
+				782A36A6280E669E00EC6D6D /* Models */,
+				782A36A2280E666D00EC6D6D /* View */,
+				782A36A3280E667A00EC6D6D /* Controller */,
 				786E167B280D52E4008FC69C /* Assets.xcassets */,
 				786E167D280D52E4008FC69C /* LaunchScreen.storyboard */,
 				786E1680280D52E4008FC69C /* Info.plist */,
@@ -141,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782A36A5280E669300EC6D6D /* Model.swift in Sources */,
 				786E1674280D52E3008FC69C /* ViewController.swift in Sources */,
 				786E167A280D52E3008FC69C /* BMI_udemy.xcdatamodeld in Sources */,
 				786E1670280D52E3008FC69C /* AppDelegate.swift in Sources */,
