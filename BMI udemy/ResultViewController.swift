@@ -9,13 +9,17 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    var bmiValue = "0.0"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        resultText.text = "\(bmiValue)"
     }
     
-
+    @IBOutlet weak var resultText: UILabel!
+    
     /*
     // MARK: - Navigation
 

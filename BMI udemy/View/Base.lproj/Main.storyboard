@@ -110,6 +110,7 @@
                         <outlet property="heightText" destination="jgn-qg-gNU" id="8q3-29-kPE"/>
                         <outlet property="weight" destination="Glz-So-Mo4" id="xfI-dZ-fQb"/>
                         <outlet property="weightText" destination="cVa-wf-ntd" id="GCp-av-OTS"/>
+                        <segue destination="v2X-54-331" kind="presentation" identifier="goToResult" id="s9r-I1-J1A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,11 +122,26 @@
             <objects>
                 <viewController id="v2X-54-331" customClass="ResultViewController" customModule="BMI_udemy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xlj-go-ynQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과 값" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTH-fE-aIm">
+                                <rect key="frame" x="137" y="391" width="140.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7x6-WO-iW8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cTH-fE-aIm" firstAttribute="centerY" secondItem="Xlj-go-ynQ" secondAttribute="centerY" id="3wO-LR-Yfc"/>
+                            <constraint firstItem="cTH-fE-aIm" firstAttribute="centerX" secondItem="Xlj-go-ynQ" secondAttribute="centerX" id="dAt-jj-NCR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultText" destination="cTH-fE-aIm" id="Sc2-jk-GjU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yk3-mt-AYf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

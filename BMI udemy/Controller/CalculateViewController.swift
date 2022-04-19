@@ -44,9 +44,7 @@ class CalculateViewController: UIViewController {
         print(String(format: "%.2f", result))
         bmi.text = "\(String(format: "%.4f", result))"
         
-        let secondVC = SecondViewController()
-        secondVC.bmiValue = String(format: "%.2f", result)
-        self.present(secondVC, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
 }
 

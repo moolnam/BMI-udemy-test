@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		782A36A5280E669300EC6D6D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A36A4280E669300EC6D6D /* Model.swift */; };
-		782A36A8280E671900EC6D6D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A36A7280E671900EC6D6D /* SecondViewController.swift */; };
 		782A36AA280E702800EC6D6D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A36A9280E702800EC6D6D /* ResultViewController.swift */; };
 		786E1670280D52E3008FC69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E166F280D52E3008FC69C /* AppDelegate.swift */; };
 		786E1672280D52E3008FC69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1671280D52E3008FC69C /* SceneDelegate.swift */; };
@@ -21,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		782A36A4280E669300EC6D6D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		782A36A7280E671900EC6D6D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		782A36A9280E702800EC6D6D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = "BMI udemy/ResultViewController.swift"; sourceTree = SOURCE_ROOT; };
 		786E166C280D52E3008FC69C /* BMI udemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI udemy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786E166F280D52E3008FC69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 			children = (
 				782A36A9280E702800EC6D6D /* ResultViewController.swift */,
 				786E1673280D52E3008FC69C /* CalculateViewController.swift */,
-				782A36A7280E671900EC6D6D /* SecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				782A36A8280E671900EC6D6D /* SecondViewController.swift in Sources */,
 				782A36A5280E669300EC6D6D /* Model.swift in Sources */,
 				782A36AA280E702800EC6D6D /* ResultViewController.swift in Sources */,
 				786E1674280D52E3008FC69C /* CalculateViewController.swift in Sources */,
