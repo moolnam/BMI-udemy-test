@@ -9,17 +9,22 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var bmiValue = "0.0"
+    var bmiValue1: String?
+    // BMI 값을 모른다. 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        resultText.text = "\(bmiValue)"
+        resultText.text = "\(bmiValue1!)"
+        
     }
     
     @IBOutlet weak var resultText: UILabel!
     
+    @IBAction func backButton(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
     /*
     // MARK: - Navigation
 
