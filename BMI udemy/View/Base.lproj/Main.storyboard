@@ -143,16 +143,38 @@
                                     <action selector="backButton:" destination="v2X-54-331" eventType="touchUpInside" id="a7k-WT-GZc"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="UkK-W0-cTW">
+                                <rect key="frame" x="111.5" y="203" width="191" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="몸무게" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaV-48-wRA">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5z-En-RWj">
+                                        <rect key="frame" x="156" y="0.0" width="35" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7x6-WO-iW8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cTH-fE-aIm" firstAttribute="centerY" secondItem="Xlj-go-ynQ" secondAttribute="centerY" id="3wO-LR-Yfc"/>
+                            <constraint firstItem="UkK-W0-cTW" firstAttribute="top" secondItem="7x6-WO-iW8" secondAttribute="top" constant="159" id="adU-Jf-dxj"/>
                             <constraint firstItem="cTH-fE-aIm" firstAttribute="centerX" secondItem="Xlj-go-ynQ" secondAttribute="centerX" id="dAt-jj-NCR"/>
+                            <constraint firstItem="UkK-W0-cTW" firstAttribute="centerX" secondItem="Xlj-go-ynQ" secondAttribute="centerX" id="dda-zb-Ffd"/>
+                            <constraint firstItem="cTH-fE-aIm" firstAttribute="top" secondItem="UkK-W0-cTW" secondAttribute="bottom" constant="140" id="wEi-rC-Ofw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resultHeight" destination="a5z-En-RWj" id="1c3-vH-LWI"/>
                         <outlet property="resultText" destination="cTH-fE-aIm" id="Sc2-jk-GjU"/>
+                        <outlet property="resultWeight" destination="qaV-48-wRA" id="Zls-XF-xnI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yk3-mt-AYf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

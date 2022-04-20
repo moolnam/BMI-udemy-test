@@ -10,6 +10,8 @@ import UIKit
 class CalculateViewController: UIViewController {
     
     var bmiValue = "0.0"
+    var bmiHeight = "0.0"
+    var bmiWeight = "0.0"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,8 @@ class CalculateViewController: UIViewController {
         
         bmi.text = "\(String(format: "%.4f", result))"
         bmiValue = String(format: "%.1f", result)
+        bmiWeight = String(format: "%.1f", weight)
+        bmiHeight = String(format: "%.1f", height)
         
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
@@ -55,6 +59,8 @@ class CalculateViewController: UIViewController {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
             destinationVC.bmiValue1 = bmiValue
+            destinationVC.height1 = bmiHeight
+            destinationVC.weight1 = bmiWeight
         }
     }
 }

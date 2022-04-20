@@ -10,16 +10,21 @@ import UIKit
 class ResultViewController: UIViewController {
 
     var bmiValue1: String?
-    // BMI 값을 모른다. 
+    // BMI 값을 모른다.
+    var height1: String?
+    var weight1: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         resultText.text = "\(bmiValue1!)"
-        
+        resultWeight.text = "\(weight1!)"
+        resultHeight.text = "\(height1!)"
     }
     
+    @IBOutlet weak var resultWeight: UILabel!
+    @IBOutlet weak var resultHeight: UILabel!
     @IBOutlet weak var resultText: UILabel!
     
     @IBAction func backButton(_ sender: UIButton) {
