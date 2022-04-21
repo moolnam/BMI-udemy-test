@@ -9,23 +9,37 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var bmiValue1: String?
-    // BMI 값을 모른다.
-    var height1: String?
-    var weight1: String?
+    var bmiValueResult: String?
+    // BMI 결과 값 상자 옵셔널
+    var height: String?
+    // 키 값 상자 옵셔널
+    var weight: String?
+    // 몸무게 값 상자 옵셔널
+    var adviceValue: String?
+    // 조언 값 상자 옵셔널
+    var uiColor: UIColor?
+    // 배경 색깔 값 상자 옵셔널
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        resultText.text = "\(bmiValue1!)"
-        resultWeight.text = "\(weight1!)"
-        resultHeight.text = "\(height1!)"
+        resultText.text = bmiValueResult
+        // 결과 값
+        resultHeight.text = height
+        // 키 값
+        resultWeight.text = weight
+        // 몸무게 값
+        advice.text = adviceValue
+        // 조언 값
+        view.backgroundColor = uiColor
+        // 배경 색깔 값
     }
     
     @IBOutlet weak var resultWeight: UILabel!
     @IBOutlet weak var resultHeight: UILabel!
     @IBOutlet weak var resultText: UILabel!
+    @IBOutlet weak var advice: UILabel!
     
     @IBAction func backButton(_ sender: UIButton) {
         self.dismiss(animated: true)
